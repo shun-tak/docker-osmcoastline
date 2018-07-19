@@ -17,7 +17,7 @@ RUN apt autoremove -y && \
     add-apt-repository -y ppa:jonathonf/gcc && \
     apt update -y && \
     apt upgrade -y && \
-    apt install -y gcc-7 g++-7 wget libutfcpp-dev libexpat1-dev zlib1g-dev libbz2-dev libboost-dev libsparsehash-dev libboost-program-options-dev libgeos++-dev doxygen graphviz pandoc && \
+    apt install -y gcc-7 g++-7 wget libutfcpp-dev libexpat1-dev zlib1g-dev libbz2-dev libboost-dev libsparsehash-dev libboost-program-options-dev libgeos++-dev doxygen graphviz pandoc spatialite-bin libspatialite-dev && \
     apt remove -y --purge gcc-5 && \
     apt autoremove -y && \
     update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 7 && \
